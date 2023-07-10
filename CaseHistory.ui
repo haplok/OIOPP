@@ -1,0 +1,2250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>723</width>
+    <height>842</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3" rowstretch="3,0,0,0,0,0,0,0" columnstretch="2,0">
+    <property name="verticalSpacing">
+     <number>6</number>
+    </property>
+    <item row="0" column="0" colspan="2">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMinAndMaxSize</enum>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_HistoryNumber">
+          <property name="text">
+           <string>№ИБ</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="5">
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QLabel" name="label_MoveFrom">
+              <property name="text">
+               <string>Поступил из</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBox_MoveFromOrganization">
+              <item>
+               <property name="text">
+                <string/>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>ПКБ №4</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>ПНД №17</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Обр.самост.</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>ПКБ №1</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_MoveFromDepartment">
+              <property name="text">
+               <string>отделение</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_MoveFromDepartment"/>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_MoveFromDoctor">
+              <property name="text">
+               <string>врач</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_MoveFromDoctor"/>
+            </item>
+            <item>
+             <widget class="QDateTimeEdit" name="dateTimeEdit_MoveFromDateTime">
+              <property name="dateTime">
+               <datetime>
+                <hour>10</hour>
+                <minute>25</minute>
+                <second>0</second>
+                <year>2000</year>
+                <month>1</month>
+                <day>1</day>
+               </datetime>
+              </property>
+              <property name="time">
+               <time>
+                <hour>10</hour>
+                <minute>25</minute>
+                <second>0</second>
+               </time>
+              </property>
+              <property name="currentSection">
+               <enum>QDateTimeEdit::MonthSection</enum>
+              </property>
+              <property name="calendarPopup">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QLabel" name="label_CurrentDoctor">
+              <property name="text">
+               <string>Лечащий Врач:</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBox_CurrentDoctor">
+              <item>
+               <property name="text">
+                <string/>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Болдырев А.Н.</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Бакланов Д.В.</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Фишер Л.Р.</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Бабайлов А.А.</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Говенько А.А.</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_DaysInOIOPP">
+              <property name="text">
+               <string>Количество к/д</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_DaysInOIOPP">
+              <property name="maximumSize">
+               <size>
+                <width>50</width>
+                <height>16777215</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QLabel" name="label_MovTo">
+              <property name="text">
+               <string>Выписан в</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBox_MoveToOrganization">
+              <item>
+               <property name="text">
+                <string/>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>ПКБ №4</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>ПНД №17</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>ПКБ №1</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_MoveToDepartment">
+              <property name="text">
+               <string>отделение</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_MoveToDepatment"/>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_MoveToDoctor">
+              <property name="text">
+               <string>врач</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_MoveToDoctor"/>
+            </item>
+            <item>
+             <widget class="QDateEdit" name="dateEdit_MoveToDate">
+              <property name="calendarPopup">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="4">
+         <widget class="Line" name="line_7">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLineEdit" name="lineEdit_YearOfHistory">
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>20</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="lineEdit_HistoryNumber">
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhNone</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="label_Slash">
+          <property name="text">
+           <string>/</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="lineEdit_PatientLastName">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(238, 255, 190);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_PatientLastName">
+          <property name="text">
+           <string>Фамилия</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="5">
+         <widget class="QLineEdit" name="lineEdit_PatientPatronymic">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(238, 255, 190);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_PatientBirthDate">
+          <property name="text">
+           <string>Дата рождения</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QLabel" name="label_PatientPatronymic">
+          <property name="text">
+           <string>Отчество</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="4">
+         <widget class="QLabel" name="label_TypeOFObservation">
+          <property name="text">
+           <string>Вид наблюдения</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="5">
+         <widget class="QLineEdit" name="lineEdit_OmsID"/>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_FLGDate">
+          <property name="text">
+           <string>ФЛГ от</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_PassportID">
+          <property name="text">
+           <string>Паспорт</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QLineEdit" name="lineEdit_SnilsID"/>
+        </item>
+        <item row="5" column="1">
+         <widget class="QDateEdit" name="dateEdit_PatientBirthDate">
+          <property name="calendarPopup">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLabel" name="label_PatientFirstName">
+          <property name="text">
+           <string>Имя</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="3">
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QLabel" name="label_DrugIntolerance">
+              <property name="text">
+               <string>Неп. лекарств:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_DrugIntolerance">
+            <property name="text">
+             <string>без особенностей</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLabel" name="label_SnilsID">
+          <property name="text">
+           <string>СНИЛС</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="lineEdit_PassportID"/>
+        </item>
+        <item row="2" column="3">
+         <widget class="QLineEdit" name="lineEdit_PatientFirstName">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(238, 255, 190);</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="5">
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="radioButton_TypeK">
+            <property name="text">
+             <string>К</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup_2</string>
+            </attribute>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="radioButton_TypeADN">
+            <property name="text">
+             <string>АДН</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup_2</string>
+            </attribute>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QRadioButton" name="radioButton_TypeD">
+            <property name="text">
+             <string>Д</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup_2</string>
+            </attribute>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QRadioButton" name="radioButton_TypeUnknown">
+            <property name="text">
+             <string>неизвестно</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup_2</string>
+            </attribute>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="3" column="4">
+         <widget class="QLabel" name="label_OmsID">
+          <property name="text">
+           <string>ОМС</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QDateEdit" name="dateEdit_FLGDate">
+          <property name="calendarPopup">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="2">
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QRadioButton" name="radioButton_Male">
+            <property name="text">
+             <string>М</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_Female">
+            <property name="text">
+             <string>Ж</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QComboBox" name="comboBox_WorkStatus">
+          <item>
+           <property name="text">
+            <string>Не работает</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Работает</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Учится</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_WorkStudy">
+          <property name="text">
+           <string>Место работы, учебы, профессия, должность</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_WorkStudy"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="Line" name="line_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <item>
+         <widget class="QLabel" name="label_MobilityGroup">
+          <property name="maximumSize">
+           <size>
+            <width>80</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Группа
+мобильности</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QFormLayout" name="formLayout_2">
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="radioButton_GroupM1">
+            <property name="text">
+             <string>М1</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup_4</string>
+            </attribute>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_GroupM1">
+            <property name="maximumSize">
+             <size>
+              <width>800</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>люди, не имеющие ограничений по мобильности, в том числе с дефектами слуха</string>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="radioButton_GroupM2">
+            <property name="text">
+             <string>М2</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup_4</string>
+            </attribute>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="label_GroupM2">
+            <property name="maximumSize">
+             <size>
+              <width>800</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="lineWidth">
+             <number>1</number>
+            </property>
+            <property name="text">
+             <string>немощные люди, мобильность которых снижена из-за старения организма (инвалиды по старости); инвалиды на протезах; инвалиды с недостатками зрения, пользующиеся белой тростью; люди с психическими отклонениями</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::PlainText</enum>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QRadioButton" name="radioButton_GroupM3">
+            <property name="text">
+             <string>М3</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup_4</string>
+            </attribute>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLabel" name="label_GroupM3">
+            <property name="maximumSize">
+             <size>
+              <width>800</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>инвалиды, использующие при движении дополнительные опоры (костыли, палки)</string>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QRadioButton" name="radioButton_GroupM4">
+            <property name="text">
+             <string>М4</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup_4</string>
+            </attribute>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLabel" name="label_GroupM4">
+            <property name="maximumSize">
+             <size>
+              <width>800</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>инвалиды, передвигающиеся на креслах-колясках, приводимых в движение вручную</string>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QRadioButton" name="radioButton_GroupImmobile">
+            <property name="text">
+             <string>Немобильные
+пациенты</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup_4</string>
+            </attribute>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLabel" name="label_GroupImmobile">
+            <property name="maximumSize">
+             <size>
+              <width>800</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>пациенты, не способные к самостоятельному передвижению по состоянию здоровья, эвакуация которых возможна на носилках либо каталках</string>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_DisabilityGroup">
+          <property name="text">
+           <string>Инвалидность</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton_DisabilityGroup0">
+          <property name="text">
+           <string>нет</string>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttonGroup_3</string>
+          </attribute>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton_DisabilityGroupUnknown">
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>неизвестно</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttonGroup_3</string>
+          </attribute>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton_DisabilityGroup1">
+          <property name="text">
+           <string>I группа</string>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttonGroup_3</string>
+          </attribute>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton_DisabilityGroup2">
+          <property name="text">
+           <string>II группа</string>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttonGroup_3</string>
+          </attribute>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton_DisabilityGroup3">
+          <property name="text">
+           <string>III группа</string>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttonGroup_3</string>
+          </attribute>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="0" column="6">
+         <widget class="QLabel" name="label_Building">
+          <property name="text">
+           <string>строение/корпус</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QComboBox" name="comboBox_TypeOfRoadMain">
+          <item>
+           <property name="text">
+            <string>улица</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>шоссе</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>проезд</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>проспект</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>тупик</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>переулок</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>бульвар</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLineEdit" name="lineEdit_RoadMain"/>
+        </item>
+        <item row="0" column="7">
+         <widget class="QLineEdit" name="lineEdit_BuildingMain"/>
+        </item>
+        <item row="0" column="4">
+         <widget class="QLabel" name="label_Home">
+          <property name="text">
+           <string>дом</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="9">
+         <widget class="QLineEdit" name="lineEdit_ApartmentNumberMain"/>
+        </item>
+        <item row="0" column="8">
+         <widget class="QLabel" name="label_ApartmentNumber">
+          <property name="text">
+           <string>квартира</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_CurrentAdress">
+          <property name="text">
+           <string>Адрес факт.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="lineEdit_CityMain">
+          <property name="text">
+           <string>г.Москва</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="5">
+         <widget class="QLineEdit" name="lineEdit_HomeMain"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_Entrance">
+          <property name="text">
+           <string>подъезд</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_AdressOfRegistration">
+          <property name="text">
+           <string>Адрес проп.
+если отлич.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="lineEdit_EntranceMain"/>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="lineEdit_CityReg">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLabel" name="label_Floor">
+          <property name="text">
+           <string>этаж</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QComboBox" name="comboBox_TypeOfRoadReg">
+          <item>
+           <property name="text">
+            <string>улица</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>шоссе</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>проезд</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>проспект</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>тупик</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>переулок</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>бульвар</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLineEdit" name="lineEdit_FloorMain"/>
+        </item>
+        <item row="2" column="3">
+         <widget class="QLineEdit" name="lineEdit_RoadReg"/>
+        </item>
+        <item row="1" column="4">
+         <widget class="QLabel" name="label_CodeMain">
+          <property name="text">
+           <string>домофон</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QLabel" name="label_HomeReg">
+          <property name="text">
+           <string>дом</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="5">
+         <widget class="QLineEdit" name="lineEdit_HomeReg"/>
+        </item>
+        <item row="2" column="6">
+         <widget class="QLabel" name="label_BuildingReg">
+          <property name="text">
+           <string>строение/корпус</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="7">
+         <widget class="QLineEdit" name="lineEdit_BuildingReg"/>
+        </item>
+        <item row="2" column="8">
+         <widget class="QLabel" name="label_ApartmentNumberReg">
+          <property name="text">
+           <string>квартира</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="9">
+         <widget class="QLineEdit" name="lineEdit_ApartmentNumberReg"/>
+        </item>
+        <item row="1" column="9">
+         <widget class="QLineEdit" name="lineEdit_MobilePhoneNumberMain">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="8">
+         <widget class="QLabel" name="label_MobilePhoneNumber">
+          <property name="text">
+           <string>тел. сот</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="7">
+         <widget class="QLineEdit" name="lineEdit_HomeTelephoneNumberMain">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="6">
+         <widget class="QLabel" name="label_HomeTelephoneNumber">
+          <property name="text">
+           <string>тел. дом</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="5">
+         <widget class="QLineEdit" name="lineEdit_CodeMain"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="Line" name="line_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <layout class="QGridLayout" name="gridLayout_8">
+        <item row="1" column="3">
+         <widget class="QLabel" name="label_ProxyTelephoneNumber2">
+          <property name="text">
+           <string>телефон</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <widget class="QLineEdit" name="lineEdit_ProxyFirstName"/>
+        </item>
+        <item row="0" column="5">
+         <widget class="QLabel" name="label_ProxyPatronymic">
+          <property name="text">
+           <string>Отчество</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLabel" name="label_ProxyFirstName">
+          <property name="text">
+           <string>Имя</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="label_ProxyTelephoneNumber1">
+          <property name="text">
+           <string>телефон</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="6">
+         <widget class="QLineEdit" name="lineEdit_ProxyTelephoneNumber3">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <widget class="QLineEdit" name="lineEdit_ProxyTelephoneNumber2">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLineEdit" name="lineEdit_ProxyLastName"/>
+        </item>
+        <item row="0" column="6">
+         <widget class="QLineEdit" name="lineEdit_ProxyPatronymic"/>
+        </item>
+        <item row="0" column="0">
+         <widget class="QComboBox" name="comboBox_ProxyType">
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>супруг(а)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>дочь</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>сын</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>племянник</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>племянница</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>внук</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>внучка</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>брат</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>сестра</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>отец</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>мать</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>тётя</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>дядя</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>дедушка</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>бабушка</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>соц. раб.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>сосед(ка)</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_ProxyLastName">
+          <property name="text">
+           <string>Фамилия</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLineEdit" name="lineEdit_ProxyTelephoneNumber1">
+          <property name="inputMethodHints">
+           <set>Qt::ImhNone</set>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="5">
+         <widget class="QLabel" name="label_ProxyTelephoneNumber3">
+          <property name="text">
+           <string>телефон</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QLabel" name="label_ProxyCommentaries">
+          <property name="text">
+           <string>Комментарии</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_ProxyCommentaries"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="6" column="0" colspan="2">
+     <layout class="QGridLayout" name="gridLayout_7">
+      <item row="1" column="1">
+       <widget class="QCheckBox" name="checkBox_ReabilitationFamily">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 244, 222);</string>
+        </property>
+        <property name="text">
+         <string>Сем консультация</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QCheckBox" name="checkBox_ReabilitationMotivation">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 244, 222);</string>
+        </property>
+        <property name="text">
+         <string>Мотивац тренинг</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QRadioButton" name="radioButton_TreatmentMotivationMedium">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 221, 230);</string>
+        </property>
+        <property name="text">
+         <string>Средний</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_7</string>
+        </attribute>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_TreatmentAttitude">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(195, 255, 158);</string>
+        </property>
+        <property name="text">
+         <string>Отношение к лечению:</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_TreatmentMotivation">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 221, 230);</string>
+        </property>
+        <property name="text">
+         <string>Мотивация к лечению:</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QCheckBox" name="checkBox_ReabilitationIndividual">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 244, 222);</string>
+        </property>
+        <property name="text">
+         <string>Индивидуальная консультация</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QCheckBox" name="checkBox_TreatmentAttitudeNegativity">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(195, 255, 158);</string>
+        </property>
+        <property name="text">
+         <string>Негативное</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QCheckBox" name="checkBox_TreatmentAttitudeNeutral">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(195, 255, 158);</string>
+        </property>
+        <property name="text">
+         <string>Нейтральное</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QCheckBox" name="checkBox_TreatmentAttitudePassive">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(195, 255, 158);</string>
+        </property>
+        <property name="text">
+         <string>Пассивное</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QCheckBox" name="checkBox_TreatmentAttitudeIndifferent">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(195, 255, 158);</string>
+        </property>
+        <property name="text">
+         <string>Безразличное</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QRadioButton" name="radioButton_ReabilitationLow">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(247, 224, 255);</string>
+        </property>
+        <property name="text">
+         <string>Низкий</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_5</string>
+        </attribute>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QCheckBox" name="checkBox_ReabilitationTBN">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 244, 222);</string>
+        </property>
+        <property name="text">
+         <string>Тренинг быт навыков</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QCheckBox" name="checkBox_TreatmentAttitudeActive">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(195, 255, 158);</string>
+        </property>
+        <property name="text">
+         <string>Активное</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QCheckBox" name="checkBox_ReabilitationEPI">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 244, 222);</string>
+        </property>
+        <property name="text">
+         <string>ЭПИ</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QRadioButton" name="radioButton_ReabilitationHigh">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(247, 224, 255);</string>
+        </property>
+        <property name="text">
+         <string>Высокий</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_5</string>
+        </attribute>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QRadioButton" name="radioButton_TreatmentMotivationHigh">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 221, 230);</string>
+        </property>
+        <property name="text">
+         <string>Высокий</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_7</string>
+        </attribute>
+       </widget>
+      </item>
+      <item row="3" column="4">
+       <widget class="QCheckBox" name="checkBox_TreatmentAttitudeNotDisciplined">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(195, 255, 158);</string>
+        </property>
+        <property name="text">
+         <string>Недисциплинированное</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3">
+       <widget class="QRadioButton" name="radioButton_TreatmentMotivationLow">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 221, 230);</string>
+        </property>
+        <property name="text">
+         <string>Низкий</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_7</string>
+        </attribute>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QCheckBox" name="checkBox_ReabilitationPhychoStudy">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 244, 222);</string>
+        </property>
+        <property name="text">
+         <string>Психоб тренинг</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QCheckBox" name="checkBox_TreatmentAttitudeDisciplined">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(195, 255, 158);</string>
+        </property>
+        <property name="text">
+         <string>Дисциплинированное</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="QCheckBox" name="checkBox_TreatmentAttitudeDeviant">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(195, 255, 158);</string>
+        </property>
+        <property name="text">
+         <string>Отклоняющееся</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QRadioButton" name="radioButton_ReabilitationMedium">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(247, 224, 255);</string>
+        </property>
+        <property name="text">
+         <string>Средний</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup_5</string>
+        </attribute>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_Reabilitation">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(247, 224, 255);</string>
+        </property>
+        <property name="text">
+         <string>Реаб. потенциал:</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="7" column="0" colspan="2">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <property name="verticalSpacing">
+       <number>3</number>
+      </property>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="pushButton_SaveChanges">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>5</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>184</red>
+              <green>255</green>
+              <blue>190</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Light">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>127</green>
+              <blue>191</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Midlight">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>63</green>
+              <blue>159</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Dark">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>127</red>
+              <green>0</green>
+              <blue>63</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Mid">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>170</red>
+              <green>0</green>
+              <blue>84</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="BrightText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ButtonText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Base">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>184</red>
+              <green>255</green>
+              <blue>190</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Window">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>184</red>
+              <green>255</green>
+              <blue>190</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Shadow">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="AlternateBase">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>127</green>
+              <blue>191</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ToolTipBase">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>220</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ToolTipText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>184</red>
+              <green>255</green>
+              <blue>190</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Light">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>127</green>
+              <blue>191</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Midlight">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>63</green>
+              <blue>159</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Dark">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>127</red>
+              <green>0</green>
+              <blue>63</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Mid">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>170</red>
+              <green>0</green>
+              <blue>84</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="BrightText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ButtonText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Base">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>184</red>
+              <green>255</green>
+              <blue>190</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Window">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>184</red>
+              <green>255</green>
+              <blue>190</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Shadow">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="AlternateBase">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>127</green>
+              <blue>191</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ToolTipBase">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>220</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ToolTipText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>127</red>
+              <green>0</green>
+              <blue>63</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>184</red>
+              <green>255</green>
+              <blue>190</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Light">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>127</green>
+              <blue>191</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Midlight">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>63</green>
+              <blue>159</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Dark">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>127</red>
+              <green>0</green>
+              <blue>63</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Mid">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>170</red>
+              <green>0</green>
+              <blue>84</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>127</red>
+              <green>0</green>
+              <blue>63</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="BrightText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ButtonText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>127</red>
+              <green>0</green>
+              <blue>63</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Base">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>184</red>
+              <green>255</green>
+              <blue>190</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Window">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>184</red>
+              <green>255</green>
+              <blue>190</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Shadow">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="AlternateBase">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>0</green>
+              <blue>127</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ToolTipBase">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>220</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ToolTipText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="128">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(184, 255, 190);</string>
+        </property>
+        <property name="text">
+         <string>Сохранить изменения</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="pushButton_GoBack">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>1</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(255, 135, 137);
+</string>
+        </property>
+        <property name="text">
+         <string>Вернуться назад</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="5" column="0">
+     <widget class="Line" name="line_6">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="Line" name="line_4">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="Line" name="line_5">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0" colspan="2">
+     <layout class="QGridLayout" name="gridLayout_12">
+      <item row="0" column="9">
+       <widget class="QLineEdit" name="lineEdit_ClinicalDiagnosis">
+        <property name="text">
+         <string>F</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="8">
+       <widget class="QLabel" name="label_ClinicalDiagnosis">
+        <property name="text">
+         <string>Диагноз Клинический</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="6">
+       <widget class="QLineEdit" name="lineEdit_OurMainDiagnosis">
+        <property name="text">
+         <string>F</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_MainDiagnosisAnotherDepartment">
+        <property name="text">
+         <string>основной</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="Line" name="line_8">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLineEdit" name="lineEdit_MainDiagnosisAnotherDepartment">
+        <property name="text">
+         <string>F</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QLabel" name="label_OurMainDiagnosis">
+        <property name="text">
+         <string>основной</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_DiagnosisFromAnotherDepartment">
+        <property name="text">
+         <string>Диагноз направившего учреждения</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="lineEdit_AdditionalDiagnosisAnotherDepartment"/>
+      </item>
+      <item row="1" column="9">
+       <widget class="QLineEdit" name="lineEdit_FinalDiagnosis">
+        <property name="text">
+         <string>F</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QLabel" name="label_OurDiagnosis">
+        <property name="text">
+         <string>Диагноз при поступлении</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="6">
+       <widget class="QLineEdit" name="lineEdit_OurAdditionalDiagnosis"/>
+      </item>
+      <item row="1" column="5">
+       <widget class="QLabel" name="label_OurAdditionalDiagnosis">
+        <property name="text">
+         <string>дополнительный</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="8">
+       <widget class="QLabel" name="label_FinalDiagnosis">
+        <property name="text">
+         <string>Диагноз заключительный</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="label_AdditionalDiagnosisAnotherDepartment">
+        <property name="text">
+         <string>дополнительный</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="7">
+       <widget class="Line" name="line_9">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="7">
+       <widget class="Line" name="line_10">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="Line" name="line_11">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>comboBox_MoveFromOrganization</tabstop>
+  <tabstop>lineEdit_MoveFromDepartment</tabstop>
+  <tabstop>lineEdit_MoveFromDoctor</tabstop>
+  <tabstop>dateTimeEdit_MoveFromDateTime</tabstop>
+  <tabstop>comboBox_CurrentDoctor</tabstop>
+  <tabstop>comboBox_MoveToOrganization</tabstop>
+  <tabstop>lineEdit_MoveToDepatment</tabstop>
+  <tabstop>lineEdit_MoveToDoctor</tabstop>
+  <tabstop>dateEdit_MoveToDate</tabstop>
+  <tabstop>lineEdit_PatientLastName</tabstop>
+  <tabstop>lineEdit_PatientFirstName</tabstop>
+  <tabstop>lineEdit_PatientPatronymic</tabstop>
+  <tabstop>lineEdit_PassportID</tabstop>
+  <tabstop>lineEdit_SnilsID</tabstop>
+  <tabstop>lineEdit_OmsID</tabstop>
+  <tabstop>dateEdit_PatientBirthDate</tabstop>
+  <tabstop>radioButton_Female</tabstop>
+  <tabstop>radioButton_Male</tabstop>
+  <tabstop>lineEdit_DrugIntolerance</tabstop>
+  <tabstop>radioButton_TypeK</tabstop>
+  <tabstop>radioButton_TypeADN</tabstop>
+  <tabstop>radioButton_TypeD</tabstop>
+  <tabstop>radioButton_TypeUnknown</tabstop>
+  <tabstop>dateEdit_FLGDate</tabstop>
+  <tabstop>comboBox_WorkStatus</tabstop>
+  <tabstop>lineEdit_WorkStudy</tabstop>
+  <tabstop>radioButton_GroupM1</tabstop>
+  <tabstop>radioButton_GroupM2</tabstop>
+  <tabstop>radioButton_GroupM3</tabstop>
+  <tabstop>radioButton_GroupM4</tabstop>
+  <tabstop>radioButton_GroupImmobile</tabstop>
+  <tabstop>radioButton_DisabilityGroup0</tabstop>
+  <tabstop>radioButton_DisabilityGroupUnknown</tabstop>
+  <tabstop>radioButton_DisabilityGroup1</tabstop>
+  <tabstop>radioButton_DisabilityGroup2</tabstop>
+  <tabstop>radioButton_DisabilityGroup3</tabstop>
+  <tabstop>lineEdit_CityMain</tabstop>
+  <tabstop>comboBox_TypeOfRoadMain</tabstop>
+  <tabstop>lineEdit_RoadMain</tabstop>
+  <tabstop>lineEdit_HomeMain</tabstop>
+  <tabstop>lineEdit_BuildingMain</tabstop>
+  <tabstop>lineEdit_ApartmentNumberMain</tabstop>
+  <tabstop>lineEdit_EntranceMain</tabstop>
+  <tabstop>lineEdit_FloorMain</tabstop>
+  <tabstop>lineEdit_CodeMain</tabstop>
+  <tabstop>lineEdit_HomeTelephoneNumberMain</tabstop>
+  <tabstop>lineEdit_MobilePhoneNumberMain</tabstop>
+  <tabstop>lineEdit_CityReg</tabstop>
+  <tabstop>comboBox_TypeOfRoadReg</tabstop>
+  <tabstop>lineEdit_RoadReg</tabstop>
+  <tabstop>lineEdit_HomeReg</tabstop>
+  <tabstop>lineEdit_BuildingReg</tabstop>
+  <tabstop>lineEdit_ApartmentNumberReg</tabstop>
+  <tabstop>comboBox_ProxyType</tabstop>
+  <tabstop>lineEdit_ProxyLastName</tabstop>
+  <tabstop>lineEdit_ProxyFirstName</tabstop>
+  <tabstop>lineEdit_ProxyPatronymic</tabstop>
+  <tabstop>lineEdit_ProxyTelephoneNumber1</tabstop>
+  <tabstop>lineEdit_ProxyTelephoneNumber2</tabstop>
+  <tabstop>lineEdit_ProxyTelephoneNumber3</tabstop>
+  <tabstop>lineEdit_ProxyCommentaries</tabstop>
+  <tabstop>lineEdit_MainDiagnosisAnotherDepartment</tabstop>
+  <tabstop>lineEdit_OurMainDiagnosis</tabstop>
+  <tabstop>lineEdit_ClinicalDiagnosis</tabstop>
+  <tabstop>radioButton_ReabilitationHigh</tabstop>
+  <tabstop>radioButton_ReabilitationMedium</tabstop>
+  <tabstop>radioButton_ReabilitationLow</tabstop>
+  <tabstop>checkBox_ReabilitationEPI</tabstop>
+  <tabstop>checkBox_ReabilitationIndividual</tabstop>
+  <tabstop>checkBox_ReabilitationFamily</tabstop>
+  <tabstop>checkBox_ReabilitationPhychoStudy</tabstop>
+  <tabstop>checkBox_ReabilitationMotivation</tabstop>
+  <tabstop>checkBox_ReabilitationTBN</tabstop>
+  <tabstop>checkBox_TreatmentAttitudeActive</tabstop>
+  <tabstop>checkBox_TreatmentAttitudeNeutral</tabstop>
+  <tabstop>checkBox_TreatmentAttitudePassive</tabstop>
+  <tabstop>checkBox_TreatmentAttitudeDeviant</tabstop>
+  <tabstop>checkBox_TreatmentAttitudeIndifferent</tabstop>
+  <tabstop>checkBox_TreatmentAttitudeNegativity</tabstop>
+  <tabstop>checkBox_TreatmentAttitudeDisciplined</tabstop>
+  <tabstop>checkBox_TreatmentAttitudeNotDisciplined</tabstop>
+  <tabstop>radioButton_TreatmentMotivationHigh</tabstop>
+  <tabstop>radioButton_TreatmentMotivationMedium</tabstop>
+  <tabstop>radioButton_TreatmentMotivationLow</tabstop>
+  <tabstop>lineEdit_AdditionalDiagnosisAnotherDepartment</tabstop>
+  <tabstop>lineEdit_OurAdditionalDiagnosis</tabstop>
+  <tabstop>lineEdit_FinalDiagnosis</tabstop>
+  <tabstop>pushButton_GoBack</tabstop>
+  <tabstop>pushButton_SaveChanges</tabstop>
+  <tabstop>lineEdit_YearOfHistory</tabstop>
+  <tabstop>lineEdit_HistoryNumber</tabstop>
+  <tabstop>lineEdit_DaysInOIOPP</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup_4"/>
+  <buttongroup name="buttonGroup_7"/>
+  <buttongroup name="buttonGroup_5"/>
+  <buttongroup name="buttonGroup_3"/>
+  <buttongroup name="buttonGroup_2"/>
+ </buttongroups>
+</ui>
